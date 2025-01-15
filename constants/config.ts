@@ -9,6 +9,7 @@ export const envConfig = {
   DB_PASSWORD: process.env.DB_PASSWORD as string,
   DB_NAME: process.env.DB_NAME as string,
   DB_MESSAGES_COLLECTION: process.env.DB_MESSAGES_COLLECTION as string,
-  WALLET_POOL_ADDRESS: process.env.WALLET_POOL_ADDRESS as `0x${string}`,
-  SC_ADDRESS: process.env.SC_ADDRESS as `0x${string}`,
+  WALLET_POOL_ADDRESS: process.env
+    .NEXT_PUBLIC_WALLET_POOL_ADDRESS as `0x${string}`,
+  SC_ADDRESS: process.env.NEXT_PUBLIC_SC_ADDRESS as `0x${string}`,
 } as const;
